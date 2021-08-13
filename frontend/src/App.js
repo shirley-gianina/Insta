@@ -1,5 +1,8 @@
 import { IoAccessibility } from "react-icons/io5";
 
+import Navbar from "./components/Navbar"
+import Home from "./pages/Home"
+
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -14,22 +17,13 @@ function App() {
 
     <Router>
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">
-                <IoAccessibility/>
-                Home
-              </Link>
-            </li>
-          </ul>
-        </nav>
+      <Navbar/>
 
         {/* A <Switch> looks through its children <Route>s and
           renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/">
-            {/* <Home /> */}
+            <Home />
           </Route>
         </Switch>
       </div>
