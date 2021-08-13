@@ -8,6 +8,8 @@ const cors = require('cors')
 
 const routes = require("./config/routes");
 
+require("./config/db");
+
 app.use(cors())
 
 app.use(express.json());

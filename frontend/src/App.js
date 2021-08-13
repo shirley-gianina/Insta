@@ -1,3 +1,5 @@
+import { IoAccessibility } from "react-icons/io5";
+
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -15,7 +17,10 @@ function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">
+                <IoAccessibility/>
+                Home
+              </Link>
             </li>
           </ul>
         </nav>

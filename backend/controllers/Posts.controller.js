@@ -1,6 +1,8 @@
-const dataPosts = require("../data/posts.json")
+const Post = require("../models/Post.model")
 
-module.exports.Posts = (req, res, next) => {
+
+module.exports.Posts = async (req, res, next) => { 
+    const dataPosts = await Post.find().exec()
     res.send(dataPosts)
 }
 
